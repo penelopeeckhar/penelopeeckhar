@@ -2,19 +2,19 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Abir%20Majdi&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Security%20Engineer%20%7C%20Digital%20Development%20Engineering&descAlignY=60&descAlign=50" width="100%"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3500&pause=800&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=Cybersecurity+%26+Digital+Engineering+Student;Penetration+Testing+%7C+SIEM+%7C+Malware+Analysis;Building+Secure+Systems+%7C+Seeking+PFE+in+France)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3500&pause=800&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Cybersecurity+%26+Digital+Engineering+Student;Penetration+Testing+%7C+SIEM+%7C+Malware+Analysis;Building+Secure+Systems+%7C+Seeking+PFE+in+France)](https://git.io/typing-svg)
 
 <br/>
 
 ![ENSA Fès](https://img.shields.io/badge/ENSA%20Fès-5th%20Year%20Engineer-7C3AED?style=for-the-badge&logo=graduation-cap&logoColor=white)
-![Program](https://img.shields.io/badge/GDNC4-Digital%20Dev%20%26%20Cybersecurity-6D28D9?style=for-the-badge&logo=shield&logoColor=white)
+![Program](https://img.shields.io/badge/GDNC5-Digital%20Dev%20%26%20Cybersecurity-6D28D9?style=for-the-badge&logo=shield&logoColor=white)
 ![Location](https://img.shields.io/badge/📍%20Fès%2C%20Morocco-Target%3A%20France-4C1D95?style=for-the-badge)
 
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-penelopeeckhar.github.io-8B5CF6?style=for-the-badge&logo=firefox&logoColor=white)](https://penelopeeckhar.github.io/portfolio)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Abir%20Majdi-7C3AED?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abir-majdi-a221bb296/)
-[![Email](https://img.shields.io/badge/Email-abir.majdi@usmba.ac.ma-6D28D9?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abir.majdi@usmba.ac.ma)
+[![Email](https://img.shields.io/badge/Email-abir.majdi%40usmba.ac.ma-6D28D9?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&to=abir.majdi@usmba.ac.ma)
 [![GitHub](https://img.shields.io/badge/GitHub-penelopeeckhar-4C1D95?style=for-the-badge&logo=github&logoColor=white)](https://github.com/penelopeeckhar)
 
 <br/>
@@ -326,15 +326,6 @@ Security operations internship in a hospital information systems context. Focuse
 
 ---
 
-## 🏅 GitHub Trophies
-
-<div align="center">
-
-[![Trophies](https://github-profile-trophy.vercel.app/?username=penelopeeckhar&theme=darkhub&no-frame=true&no-bg=true&margin-w=15&column=6)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
----
 
 ## 📈 Contribution Activity
 
@@ -392,8 +383,8 @@ open_to:
 
 <div align="center">
 
-[![Gmail](https://img.shields.io/badge/Gmail-abir.majdi@usmba.ac.ma-7C3AED?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abir.majdi@usmba.ac.ma)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-6D28D9?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abir-majdi)
+[![Gmail](https://img.shields.io/badge/Gmail-abir.majdi@usmba.ac.ma-7C3AED?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&to=abir.majdi@usmba.ac.ma)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-6D28D9?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abir-majdi-a221bb296/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-4C1D95?style=for-the-badge&logo=github&logoColor=white)](https://github.com/penelopeeckhar)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-7C3AED?style=for-the-badge&logo=firefox&logoColor=white)](https://penelopeeckhar.github.io/portfolio)
 
