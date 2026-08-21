@@ -115,7 +115,7 @@ open_to:
 | **Security** | Multi-layer detection: signature (YARA), behavioral, heuristic scoring |
 | **Performance** | ~90% reduction in false negatives on test corpus |
 | **Impact** | Deployed for Ministry of Health environment; full technical documentation produced |
-| **Repository** | [github.com/penelopeeckhar](https://github.com/penelopeeckhar) |
+| **Repository** | https://github.com/penelopeeckhar/MedSecureGateway |
 
 </div>
 
