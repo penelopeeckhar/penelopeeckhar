@@ -1,6 +1,17 @@
 # Place this file at: .github/workflows/metrics.yml
 # Generates metrics.svg and commits it to this repo — no external Vercel
 # dependency, so it can't break due to a third-party deployment being paused.
+#
+# IMPORTANT: the plugins below (languages, habits) need to read across ALL
+# of your repositories and your commit history — the default GITHUB_TOKEN
+# is scoped only to this one repo, so those plugins will fail with
+# "Unexpected error". Fix:
+#   1. Create a classic PAT: Settings > Developer settings > Personal access
+#      tokens > Tokens (classic) > Generate new token, scopes: public_repo,
+#      read:user (add "repo" instead of "public_repo" if you want private
+#      repos included too)
+#   2. Add it as a repo secret named METRICS_TOKEN:
+#      Settings > Secrets and variables > Actions > New repository secret
 
 name: GitHub Metrics
 
@@ -20,7 +31,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           committer_message: "chore: update metrics.svg [skip ci]"
 
           # Base sections
