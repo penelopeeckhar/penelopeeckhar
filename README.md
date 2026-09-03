@@ -1,6 +1,6 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Abir%20Majdi&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Security%20Engineer%20%7C%20Digital%20Development%20Engineering&descAlignY=60&descAlign=50)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&amp;section=header&text=Abir%20Majdi&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Security%20Engineer%20%7C%20Digital%20Development%20Engineering&descAlignY=60&descAlign=50)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3500&pause=800&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Cybersecurity+%26+Digital+Engineering+Student;Penetration+Testing+%7C+SIEM+%7C+Malware+Analysis;Building+Secure+Systems+%7C+Seeking+PFE+in+France)](https://git.io/typing-svg)
 
@@ -82,7 +82,9 @@ open_to:
 
 ## 🚀 Featured Projects
 
-**🛡️ MedSecure Gateway — Secure Email Gateway**
+<details>
+<summary><strong>🛡️ MedSecure Gateway — Secure Email Gateway</strong></summary>
+<br>
 
 > Autonomous design and development of a production-grade Secure Email Gateway for the **Moroccan Ministry of Health (Rabat)** as part of a PFA internship. The system automates detection of phishing attempts, ransomware payloads, and malicious attachments with risk scoring, reducing false negatives by ~90% on validation test sets.
 
@@ -97,9 +99,11 @@ open_to:
 
 The system processes inbound email streams through a multi-stage analysis pipeline: initial static inspection (YARA rules, header analysis, attachment fingerprinting), followed by dynamic sandbox execution for suspicious payloads. Risk scores are aggregated and surfaced through a real-time ELK Stack dashboard. The full system runs on virtualized Linux infrastructure with automated logging and alerting.
 
----
+</details>
 
-**⚙️ SecureOps Shield — End-to-end DevSecOps/SOC Pipeline**
+<details>
+<summary><strong>⚙️ SecureOps Shield — End-to-end DevSecOps/SOC Pipeline</strong></summary>
+<br>
 
 > A complete 9-block application security chain built on a Debian/Docker VM targeting OWASP Juice Shop, combining CI/CD security scanning, progressive container hardening, a Kubernetes cluster, and a full SOC stack (EDR/SIEM + SOAR) into a single centralized security scoring dashboard.
 
@@ -114,9 +118,11 @@ The system processes inbound email streams through a multi-stage analysis pipeli
 
 `GitHub Actions` `Semgrep` `Bandit` `Gitleaks` `Trivy` `Docker` `Kubernetes (k3s)` `kube-bench` `OWASP ZAP` `Wazuh` `TheHive` `Cortex` `Flask` `PostgreSQL`
 
----
+</details>
 
-**⚔️ MITRE ATT&CK Simulation Lab — Active Directory (85.7% Detection Rate)**
+<details>
+<summary><strong>⚔️ MITRE ATT&CK Simulation Lab — Active Directory (85.7% Detection Rate)</strong></summary>
+<br>
 
 > Full-scale enterprise attack simulation environment built in VirtualBox. A 5-VM Active Directory domain (WinServer 2022 DC, two Win10 clients, Kali Linux attacker, Ubuntu SIEM) was used to simulate 21 ATT&CK techniques using Atomic Red Team and the impacket suite. Detection engineering produced 18/21 technique coverage and 3 custom Sigma rules for residual blind spots.
 
@@ -131,9 +137,11 @@ The system processes inbound email streams through a multi-stage analysis pipeli
 
 Attack chains simulated span the full kill chain: initial access via phishing simulation, privilege escalation (T1134), lateral movement via Pass-the-Hash and impacket PsExec, and exfiltration (T1041). Three blind spots were mapped and mitigated with custom Sigma rules targeting T1041, T1134.001, and T1048.001.
 
----
+</details>
 
-**🌾 Kaggriculture — AI Agent for Kaggle Competition (~3,800 teams)**
+<details>
+<summary><strong>🌾 Kaggriculture — AI Agent for Kaggle Competition (~3,800 teams)</strong></summary>
+<br>
 
 > An AI agent (beam search + calibrated heuristic) built for the Kaggriculture Kaggle competition, including a self-sufficient local simulator ("ShadowEnv") that reconstructs game state from raw observations, since no compatible `env.clone()` was available on the official ladder.
 
@@ -146,9 +154,11 @@ Attack chains simulated span the full kill chain: initial access via phishing si
 
 `Python` `PyTorch` `Docker` `Heuristic / Beam Search`
 
----
+</details>
 
-**🔍 Web Application Hardening — OWASP Misconfiguration Lab**
+<details>
+<summary><strong>🔍 Web Application Hardening — OWASP Misconfiguration Lab</strong></summary>
+<br>
 
 > Systematic exploitation and remediation of critical misconfigurations on a deliberately vulnerable FastAPI application. Full audit cycle: discover → exploit → patch → verify, with automated scanning via Nmap and Nikto validating an ~85% risk score reduction post-hardening.
 
@@ -162,9 +172,11 @@ Attack chains simulated span the full kill chain: initial access via phishing si
 
 The project demonstrates full-cycle security engineering: the vulnerable app was first fully exploited (directory traversal, exposed admin endpoints, misconfigured CORS, insecure defaults) before systematic hardening under Docker with AppArmor/seccomp profiles, Nginx reverse proxy with strict headers, and endpoint access control.
 
----
+</details>
 
-**🍯 SSH Honeypot — Threat Intelligence & Log Centralization**
+<details>
+<summary><strong>🍯 SSH Honeypot — Threat Intelligence & Log Centralization</strong></summary>
+<br>
 
 > Production-grade SSH honeypot deployed in Docker for capturing brute-force attempts, credential spraying, and reconnaissance scans. All events are shipped to an ELK Stack pipeline for correlation and visualization. AppArmor and seccomp profiles isolate the container at the kernel level.
 
@@ -175,9 +187,11 @@ The project demonstrates full-cycle security engineering: the vulnerable app was
 | **Intelligence** | IP geolocation, attack pattern clustering, credential dump analysis                                    |
 | **Repository**   | [github.com/penelopeeckhar/projet-honeypot-ssh](https://github.com/penelopeeckhar/projet-honeypot-ssh) |
 
----
+</details>
 
-**🌐 Private Cloud Infrastructure — Proxmox + ZeroTier + HAProxy**
+<details>
+<summary><strong>🌐 Private Cloud Infrastructure — Proxmox + ZeroTier + HAProxy</strong></summary>
+<br>
 
 > Academic private cloud deployment featuring Proxmox VE for VM orchestration, ZeroTier for secure overlay networking, and HAProxy for load balancing with autoscaling policies. Designed for high-availability architecture validation.
 
@@ -187,6 +201,8 @@ The project demonstrates full-cycle security engineering: the vulnerable app was
 | **Architecture** | HA cluster with autoscaling, overlay mesh networking                                                                                 |
 | **Focus**        | SLA enforcement, hypervisor management, container/VM coexistence                                                                     |
 | **Repository**   | [github.com/penelopeeckhar/private-cloud-autoscaling-platform](https://github.com/penelopeeckhar/private-cloud-autoscaling-platform) |
+
+</details>
 
 ---
 
@@ -314,4 +330,4 @@ open_to:
 
 *"Security is not a product, but a process — and I intend to master every step of it."*
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&section=footer)
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&amp;section=footer)
