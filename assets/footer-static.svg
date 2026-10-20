@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150" role="img" aria-labelledby="amf-title">
+<title id="amf-title">Footer — build, secure, observe</title>
+<defs>
+  <linearGradient id="amf-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#10070C" stop-opacity="0"/>
+    <stop offset="1" stop-color="#451126"/>
+  </linearGradient>
+  <linearGradient id="amf-line" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#701A3D" stop-opacity="0"/>
+    <stop offset="0.5" stop-color="#E5B5C7"/>
+    <stop offset="1" stop-color="#701A3D" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<path d="M0,70 C200,40 400,100 600,70 C800,40 1000,100 1200,70 L1200,150 L0,150 Z" fill="url(#amf-bg)">
+  
+</path>
+<path d="M0,70 C200,40 400,100 600,70 C800,40 1000,100 1200,70" fill="none" stroke="url(#amf-line)" stroke-width="1.5"
+      pathLength="1000" stroke-dasharray="1000" stroke-dashoffset="0">
+  
+</path>
+<text x="600" y="118" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" letter-spacing="6" fill="#E5B5C7">BUILD · SECURE · OBSERVE</text>
+</svg>

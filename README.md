@@ -1,333 +1,224 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&amp;section=header&text=Abir%20Majdi&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Security%20Engineer%20%7C%20Digital%20Development%20Engineering&descAlignY=60&descAlign=50)
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-static.svg">
+  <img src="assets/hero.svg" width="100%" alt="Abir Majdi — Cloud Security · DevSecOps · Detection Engineering">
+</picture>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3500&pause=800&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Cybersecurity+%26+Digital+Engineering+Student;Penetration+Testing+%7C+SIEM+%7C+Malware+Analysis;Building+Secure+Systems+%7C+Seeking+PFE+in+France)](https://git.io/typing-svg)
+<br>
 
-![ENSA Fès](https://img.shields.io/badge/ENSA%20F%C3%A8s-5th%20Year%20Engineer-7C3AED?style=for-the-badge&logo=graduation-cap&logoColor=white) ![Program](https://img.shields.io/badge/GDNC5-Digital%20Dev%20%26%20Cybersecurity-6D28D9?style=for-the-badge&logo=shield&logoColor=white) ![Location](https://img.shields.io/badge/%F0%9F%93%8D%20F%C3%A8s%2C%20Morocco-Target%3A%20France-4C1D95?style=for-the-badge)
+[![Portfolio](https://img.shields.io/badge/Portfolio-penelopeeckhar.github.io-701A3D?style=flat-square&logo=githubpages&logoColor=F8F0F3)](https://penelopeeckhar.github.io/portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abir%20Majdi-451126?style=flat-square&logo=linkedin&logoColor=F8F0F3)](https://www.linkedin.com/in/abir-majdi-a221bb296/)
+[![Email](https://img.shields.io/badge/Email-abir.majdi%40usmba.ac.ma-701A3D?style=flat-square&logo=gmail&logoColor=F8F0F3)](mailto:abir.majdi@usmba.ac.ma)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-penny1598-451126?style=flat-square&logo=tryhackme&logoColor=F8F0F3)](https://tryhackme.com/p/penny1598)
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-penelopeeckhar.github.io-8B5CF6?style=for-the-badge&logo=firefox&logoColor=white)](https://penelopeeckhar.github.io/portfolio) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Abir%20Majdi-7C3AED?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abir-majdi-a221bb296/) [![Email](https://img.shields.io/badge/Email-abir.majdi%40usmba.ac.ma-6D28D9?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&to=abir.majdi@usmba.ac.ma) [![GitHub](https://img.shields.io/badge/GitHub-penelopeeckhar-4C1D95?style=for-the-badge&logo=github&logoColor=white)](https://github.com/penelopeeckhar)
+</div>
 
-[![Profile Views](https://komarev.com/ghpvc/?username=penelopeeckhar&style=for-the-badge&color=7C3AED&label=PROFILE+VIEWS)](https://github.com/penelopeeckhar) [![Followers](https://img.shields.io/github/followers/penelopeeckhar?style=for-the-badge&color=6D28D9&label=FOLLOWERS&logo=github)](https://github.com/penelopeeckhar?tab=followers) [![Stars](https://img.shields.io/github/stars/penelopeeckhar?style=for-the-badge&color=4C1D95&label=STARS&logo=github)](https://github.com/penelopeeckhar?tab=repositories)
+## `$ whoami`
+
+I'm a 5th-year engineering student in **Digital Development & Cybersecurity (GDNC)** at **ENSA Fès** (USMBA). I work on **cloud security and DevSecOps**: CI/CD pipelines with security gates, container and Kubernetes hardening, GitOps delivery, observability, and the detection and response layer on top.
+
+I build full platforms end to end, measure what they actually enforce or catch, and document the gaps.
+
+<div align="center">
+
+<picture>
+  <source media="(max-width: 600px) and (prefers-reduced-motion: reduce)" srcset="assets/impact-mobile-static.svg">
+  <source media="(max-width: 600px)" srcset="assets/impact-mobile.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/impact-static.svg">
+  <img src="assets/impact.svg" width="100%" alt="Key results: 16/16 Prometheus targets up · 350→51 image CVEs · 85.7% ATT&CK detection · 0 false positives · 6 custom NSE audits">
+</picture>
+
+<sub>Every figure above comes from the linked repository's own report or scan output.</sub>
 
 </div>
 
 ---
 
-## `whoami`
+## ◆ Featured work
 
-```
-name: Abir Majdi
-role: Security Engineer — Digital Development & Cybersecurity
-institution: ENSA Fès (École Nationale des Sciences Appliquées)
-program: GDNC5 — Génie du Développement Numérique & Cybersécurité
-year: 5th year (2023–2027)
-location: Fès, Morocco → Target: France
+<table>
+<tr>
+<td width="50%" valign="top">
 
-current_focus:
-  - PFE internship (6 months) in Cybersecurity, France
-  - MedSecure Gateway — Secure Email Gateway (Ministry of Health, Rabat) PFA
-  - SIEM engineering, threat detection, malware analysis pipelines (CHU — observation internship)
+### ☁️ [AegisCloud](https://github.com/penelopeeckhar/AegisCloud)
+**Cloud-native DevSecOps & GitOps platform** running the full delivery chain on k3s, end to end, without paid cloud.
 
-profile: |
-  Security-focused engineering student with hands-on experience across the full
-  attack/defense spectrum: penetration testing, MITRE ATT&CK simulation, malware
-  analysis (static + dynamic), SIEM engineering (Splunk, ELK), and secure application
-  development. Methodical, autonomous, and production-minded — I document everything
-  and build things that hold up under scrutiny.
+- **3 Jenkins pipelines** green (9 stages each), SonarQube quality gate
+- **Trivy gate** blocks images with fixable CRITICAL CVEs
+- **ArgoCD** auto-sync on k3s: Synced & Healthy, 48 resources
+- **Prometheus / Grafana / Alertmanager**: 16/16 targets up
+- Ansible playbook `failed=0`, Terraform validated
 
-open_to:
-  - PFE 6-month cybersecurity internship (France, visa disponible)
-  - Threat detection & SIEM engineering roles
-  - AppSec / penetration testing assignments
-  - Post-graduation employment in France
-```
+<sub>`Jenkins` `SonarQube` `Trivy` `ArgoCD` `k3s` `Prometheus`</sub>
 
----
+</td>
+<td width="50%" valign="top">
 
-## ⚡ Tech Stack
+### 🛡️ [SecureOps Shield](https://github.com/penelopeeckhar/secureops-shield)
+**End-to-end DevSecOps & SOC pipeline** around OWASP Juice Shop, in 9 blocks.
 
-### Languages
+- CI with **Semgrep, Bandit, Gitleaks, Trivy** on every push
+- Image hardening: **350 → 51** HIGH+CRITICAL CVEs (unhardened → distroless)
+- **OWASP ZAP** DAST, **k3s** audited with **kube-bench**
+- **Wazuh** FIM alert → webhook → auto-created **TheHive** case, enriched by **Cortex**
+- Flask scoring dashboard with live incident timeline and PDF export
 
-[![Skills](https://skillicons.dev/icons?i=python,bash,c,cpp,java,js,sql&theme=dark)](https://skillicons.dev)
+<sub>`GitHub Actions` `Docker` `k3s` `Wazuh` `TheHive` `Cortex` `Flask`</sub>
 
-### Frontend & Web
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-[![Skills](https://skillicons.dev/icons?i=html,css,bootstrap,flask&theme=dark)](https://skillicons.dev)
+### ⚔️ [MITRE ATT&CK Detection Lab](https://github.com/penelopeeckhar/mitre-attack-detection-lab)
+**5-VM Active Directory lab** (DC, 2 clients, Kali, Splunk SIEM).
 
-### Backend, APIs & Databases
+- **21 techniques across 7 tactics** simulated with Atomic Red Team
+- Sysmon + Universal Forwarder → **Splunk**, 40k+ events centralised
+- **85.7 % detection** (18/21)
+- **3 Sigma rules** written for the blind spots: T1134.001, T1048.001, T1041
+- ATT&CK Navigator layer and full report included
 
-[![Skills](https://skillicons.dev/icons?i=fastapi,postgres,mysql&theme=dark)](https://skillicons.dev)
+<sub>`Active Directory` `Sysmon` `Splunk` `Atomic Red Team` `Sigma`</sub>
 
-### Security, DevOps & Infrastructure
+</td>
+<td width="50%" valign="top">
 
-[![Skills](https://skillicons.dev/icons?i=docker,linux,git,github,nginx,elasticsearch&theme=dark)](https://skillicons.dev)
+### 📧 [MedSecureGateway](https://github.com/penelopeeckhar/MedSecureGateway)
+**Secure email gateway for a healthcare context** — PFA internship, Ministry of Health and Social Protection (Rabat).
 
----
+- Static pipeline: **YARA**, olevba, pdfid, VirusTotal, ExifTool, custom PE analyser
+- **Sandboxing** on isolated Linux (strace, tcpdump) and Windows (Sysmon) VMs
+- 0–100 risk engine → SAFE / SUSPICIOUS / MALICIOUS, quarantine
+- **0 false positives** on the final calibration set (disarmed samples only)
+- RBAC dashboard, 90-day purge, GDPR-minded design
 
-## 🔐 Cybersecurity Expertise
+<sub>`Python` `Flask` `PostgreSQL` `YARA` `Sysmon` `VirtualBox`</sub>
 
-| Domain                      | Proficiency             | Details                                                     |
-| --------------------------- | ----------------------- | ----------------------------------------------------------- |
-| **Threat Detection & SIEM** | ████████░░ Advanced     | Splunk, Elasticsearch, custom Sigma rules, log correlation  |
-| **Malware Analysis**        | ████████░░ Advanced     | Static/dynamic (FlareVM, YARA, Ghidra, ProcMon), sandboxing |
-| **Penetration Testing**     | ███████░░░ Proficient   | Metasploit, Nmap, Nikto, SQLMap, DVWA, Metasploitable 2     |
-| **MITRE ATT&CK**            | ████████░░ Advanced     | Full lab simulation, Atomic Red Team, 21 techniques         |
-| **Network Security**        | ███████░░░ Proficient   | Wireshark, TLS/SSL, Diffie-Hellman, MiTM, SSH hardening     |
-| **Email Security**          | ████████░░ Advanced     | Anti-phishing pipeline, ransomware detection, risk scoring  |
-| **Secure Development**      | ███████░░░ Proficient   | OWASP A02+, FastAPI hardening, AppArmor, seccomp            |
-| **Cryptography**            | ██████░░░░ Intermediate | TLS/SSL, symmetric/asymmetric, PKI, Diffie-Hellman          |
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
----
+### 🔎 [NSE-Sentinel](https://github.com/penelopeeckhar/nse-sentinel)
+**Custom Nmap NSE auditing toolkit** (Lua) for authorised assessments.
 
-## 🚀 Featured Projects
+- **6 audits**: HTTP headers, SSH crypto, FTP, SMB signing / SMBv1, MySQL, info disclosure
+- Per-service risk score aggregated into a global score
+- Terminal and HTML reports
 
-<details>
-<summary><strong>🛡️ MedSecure Gateway — Secure Email Gateway</strong></summary>
-<br>
+<sub>`Lua` `Nmap NSE` `Bash`</sub>
 
-> Autonomous design and development of a production-grade Secure Email Gateway for the **Moroccan Ministry of Health (Rabat)** as part of a PFA internship. The system automates detection of phishing attempts, ransomware payloads, and malicious attachments with risk scoring, reducing false negatives by ~90% on validation test sets.
+</td>
+<td width="50%" valign="top">
 
-| Attribute        | Details                                                                            |
-| ----------------- | ----------------------------------------------------------------------------------- |
-| **Stack**        | Python · Flask · PostgreSQL · MailHog · YARA · Paramiko · ELK Stack · Bootstrap    |
-| **Architecture** | Static analysis + dynamic sandboxing pipeline, real-time Flask/ELK dashboard       |
-| **Security**     | Multi-layer detection: signature (YARA), behavioral, heuristic scoring             |
-| **Performance**  | ~90% reduction in false negatives on test corpus                                   |
-| **Impact**       | Deployed for Ministry of Health environment; full technical documentation produced |
-| **Repository**   | <https://github.com/penelopeeckhar/MedSecureGateway>                               |
+### 🏥 [Hospital DB Anomaly SIEM](https://github.com/penelopeeckhar/hospital-db-anomaly-detection-siem)
+**Lightweight SIEM for medical database access** — internship at CHU Hassan II, Fès.
 
-The system processes inbound email streams through a multi-stage analysis pipeline: initial static inspection (YARA rules, header analysis, attachment fingerprinting), followed by dynamic sandbox execution for suspicious payloads. Risk scores are aggregated and surfaced through a real-time ELK Stack dashboard. The full system runs on virtualized Linux infrastructure with automated logging and alerting.
+- MySQL triggers log every access; off-hours, repeated and failed queries flagged
+- Daily CSV reports and email alerts
+- Flask dashboard with integrated SQLMap testing
 
-</details>
+<sub>`Python` `Flask` `MySQL` `SQLMap`</sub>
 
-<details>
-<summary><strong>⚙️ SecureOps Shield — End-to-end DevSecOps/SOC Pipeline</strong></summary>
-<br>
-
-> A complete 9-block application security chain built on a Debian/Docker VM targeting OWASP Juice Shop, combining CI/CD security scanning, progressive container hardening, a Kubernetes cluster, and a full SOC stack (EDR/SIEM + SOAR) into a single centralized security scoring dashboard.
-
-| Attribute      | Details                                                                                                                        |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| **CI/CD**      | GitHub Actions pipeline running SAST (Semgrep, Bandit), secret detection (Gitleaks), SCA/image scanning (Trivy) on every push |
-| **Hardening**  | Progressive Docker image hardening (unhardened → slim hardened → distroless) — Trivy findings cut from 350 to 51 CVEs (-85%)  |
-| **Cluster**    | Kubernetes (k3s) audited with kube-bench (CIS Benchmark); DAST coverage via OWASP ZAP                                          |
-| **SOC/SOAR**   | Wazuh as EDR/SIEM for real-time detection, connected to TheHive/Cortex for automated incident triage & enrichment              |
-| **Dashboard**  | Centralized Flask/PostgreSQL security scoring dashboard aggregating results from all 9 blocks                                 |
-| **Repository** | <https://github.com/penelopeeckhar/SecureOps-Shield>                                                                          |
-
-`GitHub Actions` `Semgrep` `Bandit` `Gitleaks` `Trivy` `Docker` `Kubernetes (k3s)` `kube-bench` `OWASP ZAP` `Wazuh` `TheHive` `Cortex` `Flask` `PostgreSQL`
-
-</details>
+</td>
+</tr>
+</table>
 
 <details>
-<summary><strong>⚔️ MITRE ATT&CK Simulation Lab — Active Directory (85.7% Detection Rate)</strong></summary>
+<summary><b>More projects</b></summary>
 <br>
 
-> Full-scale enterprise attack simulation environment built in VirtualBox. A 5-VM Active Directory domain (WinServer 2022 DC, two Win10 clients, Kali Linux attacker, Ubuntu SIEM) was used to simulate 21 ATT&CK techniques using Atomic Red Team and the impacket suite. Detection engineering produced 18/21 technique coverage and 3 custom Sigma rules for residual blind spots.
-
-| Attribute          | Details                                                                                                              |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **Stack**          | Splunk · Elasticsearch · Docker · Atomic Red Team · Sigma · impacket · Meterpreter                                   |
-| **Scale**          | 5 VMs · 21 ATT&CK techniques · 3 Sigma rules authored                                                                |
-| **Detection Rate** | 85.7% (18/21 techniques detected)                                                                                    |
-| **Security**       | Pass-the-Hash, credential dumping, lateral movement, C2 exfiltration                                                 |
-| **Impact**         | Academic supervisor: Prof. Meryem Cherkaoui Semmouni · Presented April 2026                                          |
-| **Repository**     | [github.com/penelopeeckhar/mitre-attack-detection-lab](https://github.com/penelopeeckhar/mitre-attack-detection-lab) |
-
-Attack chains simulated span the full kill chain: initial access via phishing simulation, privilege escalation (T1134), lateral movement via Pass-the-Hash and impacket PsExec, and exfiltration (T1041). Three blind spots were mapped and mitigated with custom Sigma rules targeting T1041, T1134.001, and T1048.001.
-
-</details>
-
-<details>
-<summary><strong>🌾 Kaggriculture — AI Agent for Kaggle Competition (~3,800 teams)</strong></summary>
-<br>
-
-> An AI agent (beam search + calibrated heuristic) built for the Kaggriculture Kaggle competition, including a self-sufficient local simulator ("ShadowEnv") that reconstructs game state from raw observations, since no compatible `env.clone()` was available on the official ladder.
-
-| Attribute       | Details                                                                                                                                                    |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Bug fix**     | Diagnosed and fixed a critical threading incompatibility (`signal.SIGALRM`) blocking execution on the official ladder                                    |
-| **Reliability** | Validated over 719 turns with no crash or memory leak — median decision time of 241.5 ms for a 450 ms budget                                              |
-| **Performance** | Calibrated heuristic weights & a zone-aware labor strategy over 6 agent iterations, beating the reference (starter) agent by +74 treasury points in isolated testing |
-| **Repository**  | <https://github.com/penelopeeckhar/kaggriculture>                                                                                                          |
-
-`Python` `PyTorch` `Docker` `Heuristic / Beam Search`
-
-</details>
-
-<details>
-<summary><strong>🔍 Web Application Hardening — OWASP Misconfiguration Lab</strong></summary>
-<br>
-
-> Systematic exploitation and remediation of critical misconfigurations on a deliberately vulnerable FastAPI application. Full audit cycle: discover → exploit → patch → verify, with automated scanning via Nmap and Nikto validating an ~85% risk score reduction post-hardening.
-
-| Attribute       | Details                                                                                                        |
-| --------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **Stack**       | FastAPI · Docker · Nginx · Nmap · Nikto · AppArmor · seccomp                                                   |
-| **Focus**       | OWASP A02 — Security Misconfiguration                                                                          |
-| **Security**    | Container confinement (AppArmor + seccomp), reverse proxy hardening, header policies                           |
-| **Performance** | ~85% risk score reduction validated by automated scans                                                         |
-| **Repository**  | [github.com/penelopeeckhar/projet-misconfig-mayhem](https://github.com/penelopeeckhar/projet-misconfig-mayhem) |
-
-The project demonstrates full-cycle security engineering: the vulnerable app was first fully exploited (directory traversal, exposed admin endpoints, misconfigured CORS, insecure defaults) before systematic hardening under Docker with AppArmor/seccomp profiles, Nginx reverse proxy with strict headers, and endpoint access control.
-
-</details>
-
-<details>
-<summary><strong>🍯 SSH Honeypot — Threat Intelligence & Log Centralization</strong></summary>
-<br>
-
-> Production-grade SSH honeypot deployed in Docker for capturing brute-force attempts, credential spraying, and reconnaissance scans. All events are shipped to an ELK Stack pipeline for correlation and visualization. AppArmor and seccomp profiles isolate the container at the kernel level.
-
-| Attribute        | Details                                                                                                |
-| ----------------- | --------------------------------------------------------------------------------------------------------- |
-| **Stack**        | Docker · ELK Stack · AppArmor · seccomp · Python                                                       |
-| **Security**     | Kernel-level container confinement, read-only filesystem, dropped capabilities                         |
-| **Intelligence** | IP geolocation, attack pattern clustering, credential dump analysis                                    |
-| **Repository**   | [github.com/penelopeeckhar/projet-honeypot-ssh](https://github.com/penelopeeckhar/projet-honeypot-ssh) |
-
-</details>
-
-<details>
-<summary><strong>🌐 Private Cloud Infrastructure — Proxmox + ZeroTier + HAProxy</strong></summary>
-<br>
-
-> Academic private cloud deployment featuring Proxmox VE for VM orchestration, ZeroTier for secure overlay networking, and HAProxy for load balancing with autoscaling policies. Designed for high-availability architecture validation.
-
-| Attribute        | Details                                                                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| **Stack**        | Proxmox VE · ZeroTier · HAProxy · Linux                                                                                              |
-| **Architecture** | HA cluster with autoscaling, overlay mesh networking                                                                                 |
-| **Focus**        | SLA enforcement, hypervisor management, container/VM coexistence                                                                     |
-| **Repository**   | [github.com/penelopeeckhar/private-cloud-autoscaling-platform](https://github.com/penelopeeckhar/private-cloud-autoscaling-platform) |
+| Project | What it is | Stack |
+| --- | --- | --- |
+| [Misconfig Mayhem](https://github.com/penelopeeckhar/projet-misconfig-mayhem) | Red/Blue cycle on a vulnerable FastAPI app: exploit 3 misconfigurations (cleartext credentials, debug mode, directory listing), fix them, verify. ~85 % overall risk reduction | FastAPI · Nginx · PostgreSQL · MinIO · Nmap · Nikto |
+| [SSH Honeypot](https://github.com/penelopeeckhar/projet-honeypot-ssh) | Interactive Paramiko honeypot with brute-force alerts, logs shipped to ELK; container confined with AppArmor, seccomp and dropped capabilities | Python · Docker · ELK |
+| [Private Cloud Platform](https://github.com/penelopeeckhar/private-cloud-autoscaling-platform) | Proxmox cluster over ZeroTier with HAProxy load balancing; Prometheus alert → webhook → autoscaling script | Proxmox · ZeroTier · HAProxy · Prometheus |
+| [Mini-TLS](https://github.com/penelopeeckhar/projet-crypto-tls) | Teaching implementation of a TLS-style handshake: DH-2048, HKDF-SHA256, AES-256-GCM | Python · cryptography |
+| [Kaggriculture Agent](https://github.com/penelopeeckhar/kaggriculture-agent) | Beam-search agent for a Kaggle competition (~3,800 teams); ladder score 292.6 → 342.8 over 6 tested versions | Python · Docker |
 
 </details>
 
 ---
 
-## 💼 Experience
+## ◆ Skills, with evidence
 
-### Security Engineering Intern — Ministry of Health, Rabat
+| Area | Tools | Where I used them |
+| --- | --- | --- |
+| **DevSecOps** | Jenkins · GitHub Actions · SonarQube · Semgrep · Gitleaks · Trivy · OWASP ZAP | AegisCloud · SecureOps Shield |
+| **Cloud & Kubernetes security** | Docker · Kubernetes (k3s) · kube-bench · ArgoCD · Ansible · Terraform · Proxmox | AegisCloud · SecureOps Shield · Private Cloud |
+| **Observability** | Prometheus · Grafana · Alertmanager | AegisCloud · Private Cloud |
+| **Detection & SIEM** | Splunk · Sysmon · Sigma · ELK · Wazuh | ATT&CK lab · Honeypot · SecureOps Shield |
+| **SOAR & incident response** | TheHive · Cortex · webhooks | SecureOps Shield |
+| **Malware analysis** | YARA · olevba · pdfid · Ghidra · PEStudio · FakeNet-NG · sandboxing | MedSecureGateway · WannaCry coursework |
+| **Offensive testing (labs)** | Nmap / NSE · Burp Suite · Metasploit · SQLMap · Hydra · John / Hashcat | NSE-Sentinel · TechBiz internship labs |
+| **Network & crypto** | Wireshark · Ettercap · TLS · Diffie-Hellman · AES-GCM | Mini-TLS · network attack labs |
 
-**PFA Internship · Jul – Aug 2026**
+<div align="center">
+<br>
 
-Designed and autonomously developed MedSecure Gateway, a Secure Email Gateway integrated into a virtualized Linux environment for a health ministry context. The system addresses detection of phishing, ransomware, and malicious attachments across internal communication channels.
+[![Stack](https://skillicons.dev/icons?i=docker,kubernetes,jenkins,githubactions,ansible,terraform,linux&theme=dark)](https://skillicons.dev)
+<br>
+[![Stack](https://skillicons.dev/icons?i=python,bash,lua,c,java,js,mysql&theme=dark)](https://skillicons.dev)
+<br>
+[![Stack](https://skillicons.dev/icons?i=prometheus,grafana,elasticsearch,nginx,flask,fastapi,postgres,kali&theme=dark)](https://skillicons.dev)
 
-- Engineered multi-stage analysis pipeline: static (YARA, header inspection) + dynamic (sandboxing, behavioral)
-- Deployed real-time monitoring dashboard using Flask + ELK Stack
-- Achieved ~90% reduction in false negatives on validation test corpus
-- Authored complete technical documentation for production handoff
-
-![Python](https://img.shields.io/badge/Python-7C3AED?style=flat-square&logo=python&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-6D28D9?style=flat-square&logo=flask&logoColor=white) ![ELK](https://img.shields.io/badge/ELK%20Stack-4C1D95?style=flat-square&logo=elasticsearch&logoColor=white) ![YARA](https://img.shields.io/badge/YARA-7C3AED?style=flat-square&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-6D28D9?style=flat-square&logo=docker&logoColor=white)
-
----
-
-### Security Analyst Intern — CHU Hassan II de Fès
-
-**Initiation Internship · July 2025**
-
-Security operations internship in a hospital information systems context. Focused on database security monitoring and anomaly detection within a medical data environment.
-
-- Analyzed MySQL access logs to surface suspicious query patterns on medical databases
-- Implemented an abnormal access logging system with structured event reporting
-- Produced security audit documentation and remediation recommendations
-
-![MySQL](https://img.shields.io/badge/MySQL-7C3AED?style=flat-square&logo=mysql&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-6D28D9?style=flat-square&logo=linux&logoColor=white) ![Security Audit](https://img.shields.io/badge/Security%20Audit-4C1D95?style=flat-square&logoColor=white)
+</div>
 
 ---
 
-## 🏆 Achievements
+## ◆ Experience
 
-| Recognition                    | Details                                                                       |
-| -------------------------------- | -------------------------------------------------------------------------------- |
-| 🎯 **ATT&CK Detection Rate**    | 85.7% detection (18/21 techniques) in full AD simulation lab                  |
-| 📉 **False Negative Reduction** | ~90% improvement in email threat pipeline (MedSecure Gateway)                 |
-| 🔒 **Risk Score Reduction**     | ~85% reduction validated by automated security scans (OWASP project)          |
-| 🛡️ **Sigma Rules Authored**    | 3 custom detection rules for ATT&CK blind spots (T1041, T1134.001, T1048.001) |
-| 🎓 **Academic Standing**        | 5th-year engineering program at ENSA Fès — highly selective national school   |
-| 🌍 **International Target**     | Active PFE candidate for France — work visa eligible                          |
+| When | Role | Highlights |
+| --- | --- | --- |
+| **Aug – Sep 2026** | Ethical Hacking Intern · **TechBiz Security Academy** (remote) | 6 weeks, 18 graded lab tasks: OSINT, enumeration, OWASP Top 10, Burp, Metasploit, capstone pentest with report. Certificate *with distinction* |
+| **Aug – Sep 2026** | Cybersecurity Intern · **InternNova** (remote) | 6-week remote program with weekly graded lab tasks and reports |
+| **Summer 2026** | Security Engineering Intern (PFA) · **Ministry of Health and Social Protection**, Rabat | Designed and built MedSecureGateway, from architecture to calibration |
+| **Jul 2025** | Observation Intern · **CHU Hassan II**, Fès | Built an anomaly-detection SIEM for hospital database access |
 
 ---
 
-## 📜 Certifications
+## ◆ Certifications
 
-### Oracle
+[![TechBiz](https://img.shields.io/badge/TechBiz%20Security%20Academy-Ethical%20Hacking%20%C2%B7%20with%20distinction-701A3D?style=flat-square)](https://penelopeeckhar.github.io/portfolio/)
+[![InternNova](https://img.shields.io/badge/InternNova-Cyber%20Security%20Internship-451126?style=flat-square)](https://penelopeeckhar.github.io/portfolio/)
+[![Forage](https://img.shields.io/badge/Mastercard%20%C3%97%20Forage-Cybersecurity%20Job%20Simulation-701A3D?style=flat-square)](https://penelopeeckhar.github.io/portfolio/)
+<br>
+[![Oracle](https://img.shields.io/badge/Oracle-Database%20Programming%20with%20SQL-451126?style=flat-square&logo=oracle&logoColor=F8F0F3)](https://penelopeeckhar.github.io/portfolio/)
+[![Udemy](https://img.shields.io/badge/Udemy-SQLMap%20for%20Ethical%20Hacking-701A3D?style=flat-square&logo=udemy&logoColor=F8F0F3)](https://penelopeeckhar.github.io/portfolio/)
+[![Udemy](https://img.shields.io/badge/Udemy-MiTM%20Attacks%20%26%20RAT%20Dev-451126?style=flat-square&logo=udemy&logoColor=F8F0F3)](https://penelopeeckhar.github.io/portfolio/)
+[![Great Learning](https://img.shields.io/badge/Great%20Learning-Introduction%20to%20Cryptography-701A3D?style=flat-square)](https://penelopeeckhar.github.io/portfolio/)
 
-[![Oracle](https://img.shields.io/badge/Database%20Programming%20with%20SQL-Oracle-7C3AED?style=for-the-badge&logo=oracle&logoColor=white)](https://education.oracle.com/)
-
-### Udemy
-
-[![Udemy](https://img.shields.io/badge/SQLMap%20for%20Ethical%20Hacking-Udemy-6D28D9?style=for-the-badge&logo=udemy&logoColor=white)](https://www.udemy.com/) [![Udemy](https://img.shields.io/badge/MiTM%20Attacks%20%26%20RAT%20Dev%20%7C%20PYCEH-Udemy-6D28D9?style=for-the-badge&logo=udemy&logoColor=white)](https://www.udemy.com/)
-
-### Great Learning
-
-[![GL](https://img.shields.io/badge/Introduction%20to%20Cryptography-Great%20Learning-4C1D95?style=for-the-badge&logoColor=white)](https://www.mygreatlearning.com/)
-
----
-
-## 🧩 CTF & Labs
-
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-Active-7C3AED?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/penny1598) [![HackerDNA](https://img.shields.io/badge/Hack%20The%20Box-Active-6D28D9?style=for-the-badge&logo=hackthebox&logoColor=white)](https://hackerdna.com/users/arael)
-
-**Completed CTF challenges:** n8n exploit · DFIR Splunk · Metasploitable 2 · AD attack simulations
+**Hands-on platforms:** [TryHackMe](https://tryhackme.com/p/penny1598) · [HackerDNA](https://hackerdna.com/users/arael) · Hack The Box
 
 ---
 
-## 📊 GitHub Analytics
+## ◆ Contribution activity
 
-[![](https://github-readme-stats.vercel.app/api?username=penelopeeckhar&show_icons=true&theme=midnight-purple&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=7C3AED&text_color=C4B5FD)](https://github-readme-stats.vercel.app/api?username=penelopeeckhar&show_icons=true&theme=midnight-purple) [![](https://github-readme-stats.vercel.app/api/top-langs/?username=penelopeeckhar&layout=compact&langs_count=8&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=A78BFA&text_color=C4B5FD)](https://github-readme-stats.vercel.app/api/top-langs/?username=penelopeeckhar&layout=compact)
+<div align="center">
 
-[![](https://github-readme-streak-stats.herokuapp.com/?user=penelopeeckhar&theme=midnight-purple&hide_border=true&background=0D1117&stroke=7C3AED&ring=A78BFA&fire=C4B5FD&currStreakLabel=A78BFA&sideNums=C4B5FD&dates=6D28D9)](https://github-readme-streak-stats.herokuapp.com/?user=penelopeeckhar)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/penelopeeckhar/penelopeeckhar/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/penelopeeckhar/penelopeeckhar/output/github-snake.svg">
+  <img alt="Contribution graph animated as a snake" src="https://raw.githubusercontent.com/penelopeeckhar/penelopeeckhar/output/github-snake.svg" width="100%">
+</picture>
 
----
+<sub>Generated daily from my GitHub contribution graph by the <code>Generate Snake</code> workflow.</sub>
 
-## 📈 Contribution Activity
-
-[![Activity Graph](https://fabianocouto-activity-graph.vercel.app/graph?username=penelopeeckhar&bg_color=0D1117&color=A78BFA&line=7C3AED&point=C4B5FD&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
----
-
-## 🐍 Contribution Snake
-
-![github-snake](https://raw.githubusercontent.com/penelopeeckhar/penelopeeckhar/output/github-snake.svg)
+</div>
 
 ---
 
-## 🎯 Current Focus
+<div align="center">
 
-```
-learning:
-  - Advanced threat hunting and APT techniques
-  - Cloud security (AWS, Azure security posture)
-  - Reverse engineering (deeper binary analysis)
-  - Kubernetes security and container hardening
+**Cloud Security · DevSecOps · Detection Engineering**
 
-building:
-  - MedSecure Gateway (production-grade email threat pipeline)
-  - GitHub portfolio — structured, documented, recruiter-ready
-  - Detection rules library (Sigma, Splunk SPL)
+[Portfolio](https://penelopeeckhar.github.io/portfolio/) · [LinkedIn](https://www.linkedin.com/in/abir-majdi-a221bb296/) · [abir.majdi@usmba.ac.ma](mailto:abir.majdi@usmba.ac.ma)
 
-exploring:
-  - CTF competitions (DFIR, web exploitation, AD attacks)
-  - Purple team methodologies
-  - AI/ML applied to threat detection
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/footer-static.svg">
+  <img src="assets/footer.svg" width="100%" alt="Build · Secure · Observe">
+</picture>
 
-open_to:
-  - PFE internship — 6 months — Cybersecurity — France
-  - Companies: Orange Cyberdefense · Thales · Capgemini · Sekoia.io · Stormshield
-  - Post-graduation employment opportunities in France
-  - Work visa sponsorship welcomed
-```
-
----
-
-## 🤝 Connect
-
-[![Gmail](https://img.shields.io/badge/Gmail-abir.majdi%40usmba.ac.ma-7C3AED?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&to=abir.majdi@usmba.ac.ma) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-6D28D9?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abir-majdi-a221bb296/) [![GitHub](https://img.shields.io/badge/GitHub-Follow-4C1D95?style=for-the-badge&logo=github&logoColor=white)](https://github.com/penelopeeckhar) [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-8B5CF6?style=for-the-badge&logo=firefox&logoColor=white)](https://penelopeeckhar.github.io/portfolio)
-
----
-
-*"Security is not a product, but a process — and I intend to master every step of it."*
-
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&amp;section=footer)
+</div>
