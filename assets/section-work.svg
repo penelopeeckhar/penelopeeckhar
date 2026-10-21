@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 170" width="1200" height="170" role="img" aria-labelledby="pwk-t">
+<title id="pwk-t">Selected work</title>
+<defs>
+  <linearGradient id="pwk-bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#10070C"/><stop offset="0.6" stop-color="#190B12"/><stop offset="1" stop-color="#240A16"/>
+  </linearGradient>
+  <radialGradient id="pwk-glow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#701A3D" stop-opacity="0.55"/><stop offset="1" stop-color="#451126" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="pwk-rule" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#C77B9B"/><stop offset="1" stop-color="#701A3D" stop-opacity="0"/>
+  </linearGradient>
+  <clipPath id="pwk-clip"><rect width="100%" height="100%" rx="16"/></clipPath>
+  <pattern id="pwk-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+    <path d="M28 0H0V28" fill="none" stroke="#C77B9B" stroke-opacity="0.05"/>
+  </pattern>
+</defs>
+<g clip-path="url(#pwk-clip)">
+<rect width="1200" height="170" rx="16" fill="url(#pwk-bg)"/>
+<rect width="1200" height="170" rx="16" fill="url(#pwk-grid)"/>
+<ellipse cx="840" cy="85" rx="420" ry="102" fill="url(#pwk-glow)"/>
+</g>
+<text x="56" y="50" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="13" letter-spacing="3" fill="#C77B9B">02 · SELECTED WORK</text><text x="56" y="94" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#F8F0F3">Platforms, not assignments.</text><rect x="56" y="110" width="160" height="2" fill="url(#pwk-rule)"/><text x="1144" y="140" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#E5B5C7">Every number below comes from the repository's own report or scan output.</text>
+<rect x="0.5" y="0.5" width="1199" height="169" rx="16" fill="none" stroke="#451126"/>
+</svg>

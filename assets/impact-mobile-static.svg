@@ -7,7 +7,7 @@
 </defs>
 <rect width="640" height="334" rx="18" fill="#10070C"/>
 
-  <g opacity="1">
+  <g>
     
     <rect x="20.0" y="20" width="190.7" height="140" rx="14" fill="#190B12" stroke="#451126"/>
     <rect x="20.0" y="20" width="190.7" height="3" rx="1.5" fill="url(#amm-top)"/>
@@ -15,7 +15,7 @@
     <text x="115.3" y="120" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" fill="#E5B5C7">Prometheus targets up</text>
     <text x="115.3" y="144" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="12.5" fill="#C77B9B" fill-opacity="0.85">AegisCloud GitOps lab</text>
   </g>
-  <g opacity="1">
+  <g>
     
     <rect x="224.7" y="20" width="190.7" height="140" rx="14" fill="#190B12" stroke="#451126"/>
     <rect x="224.7" y="20" width="190.7" height="3" rx="1.5" fill="url(#amm-top)"/>
@@ -23,7 +23,7 @@
     <text x="320.0" y="120" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" fill="#E5B5C7">image CVEs (H+C)</text>
     <text x="320.0" y="144" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="12.5" fill="#C77B9B" fill-opacity="0.85">Juice Shop → distroless</text>
   </g>
-  <g opacity="1">
+  <g>
     
     <rect x="429.3" y="20" width="190.7" height="140" rx="14" fill="#190B12" stroke="#451126"/>
     <rect x="429.3" y="20" width="190.7" height="3" rx="1.5" fill="url(#amm-top)"/>
@@ -31,7 +31,7 @@
     <text x="524.7" y="120" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" fill="#E5B5C7">ATT&amp;CK detection</text>
     <text x="524.7" y="144" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="12.5" fill="#C77B9B" fill-opacity="0.85">18/21 techniques · AD lab</text>
   </g>
-  <g opacity="1">
+  <g>
     
     <rect x="20.0" y="174" width="293.0" height="140" rx="14" fill="#190B12" stroke="#451126"/>
     <rect x="20.0" y="174" width="293.0" height="3" rx="1.5" fill="url(#amm-top)"/>
@@ -39,7 +39,7 @@
     <text x="166.5" y="274" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" fill="#E5B5C7">false positives</text>
     <text x="166.5" y="298" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="12.5" fill="#C77B9B" fill-opacity="0.85">email gateway calibration</text>
   </g>
-  <g opacity="1">
+  <g>
     
     <rect x="327.0" y="174" width="293.0" height="140" rx="14" fill="#190B12" stroke="#451126"/>
     <rect x="327.0" y="174" width="293.0" height="3" rx="1.5" fill="url(#amm-top)"/>
