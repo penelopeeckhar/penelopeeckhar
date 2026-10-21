@@ -51,8 +51,6 @@
 
 <img src="https://raw.githubusercontent.com/penelopeeckhar/penelopeeckhar/output/activity.svg" width="100%" alt="Contribution activity over the last year, generated daily from GitHub">
 
-<img src="https://raw.githubusercontent.com/penelopeeckhar/penelopeeckhar/output/snake.svg" width="100%" alt="A snake eating my contribution graph, regenerated daily">
-
 <img src="https://github-readme-stats.vercel.app/api?username=penelopeeckhar&show_icons=true&hide_rank=true&custom_title=GitHub%20at%20a%20glance&bg_color=10070C&title_color=F8F0F3&text_color=E5B5C7&icon_color=C77B9B&border_color=451126&border_radius=16&card_width=520" width="49%" alt="GitHub at a glance: stars, commits, pull requests and issues">
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=penelopeeckhar&layout=compact&langs_count=8&custom_title=Languages%20in%20my%20repos&bg_color=10070C&title_color=F8F0F3&text_color=E5B5C7&border_color=451126&border_radius=16&card_width=520" width="49%" alt="Most used languages across my public repositories">
 

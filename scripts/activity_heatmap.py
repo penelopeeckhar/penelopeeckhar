@@ -91,12 +91,17 @@ def render(weeks, total, demo_mode=False):
   <linearGradient id="{p}-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{MID}"/><stop offset="0.6" stop-color="{WINE_DARK}"/><stop offset="1" stop-color="#240A16"/></linearGradient>
   <linearGradient id="{p}-rule" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{ROSE}"/><stop offset="1" stop-color="{WINE}" stop-opacity="0"/></linearGradient>
   <linearGradient id="{p}-scan" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{PALE}" stop-opacity="0"/><stop offset="0.5" stop-color="{PALE}" stop-opacity="0.12"/><stop offset="1" stop-color="{PALE}" stop-opacity="0"/></linearGradient>
+  <filter id="{p}-cg" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="3"/></filter>
+  <filter id="{p}-sg" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.5"/></filter>
   <clipPath id="{p}-clip"><rect width="{W}" height="{H}" rx="16"/></clipPath>
 </defs>''',
            f'<g clip-path="url(#{p}-clip)"><rect width="{W}" height="{H}" fill="url(#{p}-bg)"/>',
            f'<text x="56" y="56" font-family="{MONO}" font-size="13" letter-spacing="3" fill="{ROSE}">05 · ACTIVITY</text>',
            f'<text x="56" y="100" font-family="{SERIF}" font-size="34" fill="{IVORY}">A year of building, one square at a time.</text>',
-           f'<rect x="56" y="116" width="160" height="2" fill="url(#{p}-rule)"/>']
+           f'<rect x="56" y="116" width="160" height="2" fill="url(#{p}-rule)">'
+           f'<animate attributeName="width" values="120;240;120" dur="6s" repeatCount="indefinite"/></rect>',
+           f'<circle cx="56" cy="117" r="2.6" fill="{IVORY}"><animate attributeName="cx" values="56;286;56" dur="5s" repeatCount="indefinite"/>'
+           f'<animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/></circle>']
 
     for i, (big, lab) in enumerate([(f"{total:,}", "contributions"), (str(active), "active days"),
                                     (str(longest), "longest streak"), (str(current), "current streak")]):
@@ -118,13 +123,24 @@ def render(weeks, total, demo_mode=False):
             r = (dt.date.fromisoformat(d).weekday() + 1) % 7
             y = gy + r * (cell + gap)
             col = LEVELS[level(c, peak)]
-            # looping highlight wave: each column lights up in turn, data stays visible
-            t = 0.05 + 0.75 * wi / max(1, len(weeks) - 1)
-            hi = PALE if c else "#3A1828"
-            out.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="3.5" fill="{col}">'
-                       f'<title>{d}: {c}</title>'
-                       f'<animate attributeName="fill" values="{col};{col};{hi};{col};{col}" '
-                       f'keyTimes="0;{t:.3f};{t + 0.03:.3f};{t + 0.09:.3f};1" dur="9s" repeatCount="indefinite"/></rect>')
+            out.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="3.5" fill="{col}"><title>{d}: {c}</title></rect>')
+
+    # snake: a short white trail winding through the grid, down one week, up the next
+    pts = []
+    for wi in range(len(weeks)):
+        rows = range(7) if wi % 2 == 0 else range(6, -1, -1)
+        pts += [(gx + wi * (cell + gap), gy + r * (cell + gap)) for r in rows]
+    path = "M" + " L".join(f"{x},{y}" for x, y in pts)
+    step = 0.11                      # seconds per cell
+    dur = round(step * (len(pts) - 1), 2)
+    trail = [(IVORY, 1.0), (IVORY, 0.85), (PALE, 0.7), (PALE, 0.5), (ROSE, 0.35)]
+    n = len(trail)
+    for k, (colr, op) in reversed(list(enumerate(trail))):
+        begin = -(n - k) * step      # all segments already running, tail lags behind head
+        glow = (f'<rect width="{cell}" height="{cell}" rx="4" fill="{IVORY}" opacity="0.6" filter="url(#{p}-sg)"/>'
+                if k == 0 else "")
+        out.append(f'<g>{glow}<rect width="{cell}" height="{cell}" rx="3.5" fill="{colr}" opacity="{op}"/>'
+                   f'<animateMotion path="{path}" dur="{dur}s" begin="{begin:.2f}s" calcMode="linear" repeatCount="indefinite"/></g>')
 
     ly = gy + 7 * (cell + gap) + 26
     out.append(f'<text x="{gx}" y="{ly}" font-family="{MONO}" font-size="11" fill="{PALE}" fill-opacity="0.6">'
@@ -134,7 +150,16 @@ def render(weeks, total, demo_mode=False):
     for i, c in enumerate(LEVELS):
         out.append(f'<rect x="{lx + i*20}" y="{ly-11}" width="14" height="14" rx="3" fill="{c}"/>')
     out.append(f'<text x="{lx + 5*20 + 4}" y="{ly}" font-family="{MONO}" font-size="11" fill="{PALE}" fill-opacity="0.6">more</text>')
-    out.append(f'</g><rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="16" fill="none" stroke="{BURG}"/></svg>')
+    out.append(f'</g><rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="16" fill="none" stroke="{BURG}"/>')
+    # comet: a short white streak racing around the border
+    rr, x0, y0, w0, h0 = 15, 1, 1, W - 2, H - 2
+    d = (f"M{x0+rr},{y0} H{x0+w0-rr} A{rr},{rr} 0 0 1 {x0+w0},{y0+rr} V{y0+h0-rr} A{rr},{rr} 0 0 1 {x0+w0-rr},{y0+h0} "
+         f"H{x0+rr} A{rr},{rr} 0 0 1 {x0},{y0+h0-rr} V{y0+rr} A{rr},{rr} 0 0 1 {x0+rr},{y0} Z")
+    anim = '<animate attributeName="stroke-dashoffset" values="1000;0" dur="4.8s" repeatCount="indefinite"/>'
+    out.append(f'<path d="{d}" fill="none" stroke="{IVORY}" stroke-width="5" stroke-opacity="0.55" filter="url(#{p}-cg)" '
+               f'pathLength="1000" stroke-dasharray="60 940" stroke-linecap="round">{anim}</path>')
+    out.append(f'<path d="{d}" fill="none" stroke="{IVORY}" stroke-width="1.6" '
+               f'pathLength="1000" stroke-dasharray="60 940" stroke-linecap="round">{anim}</path></svg>')
     return "\n".join(out)
 
 
