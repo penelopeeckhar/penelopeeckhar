@@ -118,13 +118,14 @@ def render(weeks, total, demo_mode=False):
             r = (dt.date.fromisoformat(d).weekday() + 1) % 7
             y = gy + r * (cell + gap)
             col = LEVELS[level(c, peak)]
-            t0 = 0.05 + wi * 0.012
+            # looping highlight wave: each column lights up in turn, data stays visible
+            t = 0.05 + 0.75 * wi / max(1, len(weeks) - 1)
+            hi = PALE if c else "#3A1828"
             out.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="3.5" fill="{col}">'
                        f'<title>{d}: {c}</title>'
-                       f'<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;{t0:.3f};{t0 + 0.15:.3f};1" dur="2.2s" fill="freeze"/></rect>')
+                       f'<animate attributeName="fill" values="{col};{col};{hi};{col};{col}" '
+                       f'keyTimes="0;{t:.3f};{t + 0.03:.3f};{t + 0.09:.3f};1" dur="9s" repeatCount="indefinite"/></rect>')
 
-    out.append(f'<rect x="-200" y="{gy-6}" width="160" height="{7*(cell+gap)+8}" fill="url(#{p}-scan)">'
-               f'<animate attributeName="x" values="-200;1250" dur="6s" begin="2s" repeatCount="indefinite"/></rect>')
     ly = gy + 7 * (cell + gap) + 26
     out.append(f'<text x="{gx}" y="{ly}" font-family="{MONO}" font-size="11" fill="{PALE}" fill-opacity="0.6">'
                f'{"design preview · sample data" if demo_mode else "live from GitHub · updated daily"}</text>')
