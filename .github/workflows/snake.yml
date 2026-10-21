@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - "scripts/activity_heatmap.py"
+      - "scripts/frame_snake.py"
       - ".github/workflows/snake.yml"
 
 permissions:
@@ -26,8 +27,12 @@ jobs:
         with:
           github_user_name: penelopeeckhar
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/snake-raw.svg?palette=github-dark
+
+      - name: Recolour and frame the snake
+        run: |
+          python3 scripts/frame_snake.py dist/snake-raw.svg dist/snake.svg
+          rm dist/snake-raw.svg
 
       - name: Generate activity heatmap
         run: python3 scripts/activity_heatmap.py penelopeeckhar dist/activity.svg
