@@ -112,35 +112,50 @@ def render(weeks, total, demo_mode=False):
     for r, lab in [(1, "Mon"), (3, "Wed"), (5, "Fri")]:
         out.append(f'<text x="{gx-12}" y="{gy + r*(cell+gap) + 12}" text-anchor="end" font-family="{MONO}" font-size="11" fill="{PALE}" fill-opacity="0.6">{lab}</text>')
 
+    # snake path: down one week, up the next, through every cell
+    nweeks = len(weeks)
+    order = {}
+    pts = []
+    for wi in range(nweeks):
+        rows = range(7) if wi % 2 == 0 else range(6, -1, -1)
+        for r in rows:
+            order[(wi, r)] = len(pts)
+            pts.append((gx + wi * (cell + gap), gy + r * (cell + gap)))
+    path = "M" + " L".join(f"{x},{y}" for x, y in pts)
+    step = 0.045                     # seconds per cell
+    N = len(pts)
+    dur = round(step * (N - 1), 3)
+    trail = [(IVORY, 1.0), (IVORY, 0.95), (IVORY, 0.85), (PALE, 0.75), (PALE, 0.6), (ROSE, 0.45), (ROSE, 0.3)]
+    n = len(trail)
+    eaten = LEVELS[0]
+
     last_month = None
     for wi, w in enumerate(weeks):
         x = gx + wi * (cell + gap)
         m = dt.date.fromisoformat(w[0][0]).strftime("%b")
-        if m != last_month and wi < len(weeks) - 2:
+        if m != last_month and wi < nweeks - 2:
             out.append(f'<text x="{x}" y="{gy-12}" font-family="{MONO}" font-size="11" fill="{PALE}" fill-opacity="0.6">{m}</text>')
             last_month = m
         for d, c in w:
             r = (dt.date.fromisoformat(d).weekday() + 1) % 7
             y = gy + r * (cell + gap)
             col = LEVELS[level(c, peak)]
-            out.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="3.5" fill="{col}"><title>{d}: {c}</title></rect>')
+            eat = ""
+            if c:
+                # the head reaches this cell at ((index - n) mod (N-1)) * step; the square is eaten
+                # and stays empty until the loop restarts with the full graph
+                f = ((order[(wi, r)] - n) % (N - 1)) / (N - 1)
+                f = min(max(f, 0.002), 0.998)
+                eat = (f'<animate attributeName="fill" values="{col};{eaten}" keyTimes="0;{f:.4f}" '
+                       f'calcMode="discrete" dur="{dur}s" repeatCount="indefinite"/>')
+            out.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="3.5" fill="{col}"><title>{d}: {c}</title>{eat}</rect>')
 
-    # snake: a short white trail winding through the grid, down one week, up the next
-    pts = []
-    for wi in range(len(weeks)):
-        rows = range(7) if wi % 2 == 0 else range(6, -1, -1)
-        pts += [(gx + wi * (cell + gap), gy + r * (cell + gap)) for r in rows]
-    path = "M" + " L".join(f"{x},{y}" for x, y in pts)
-    step = 0.075                     # seconds per cell
-    dur = round(step * (len(pts) - 1), 2)
-    trail = [(IVORY, 1.0), (IVORY, 0.95), (IVORY, 0.85), (PALE, 0.75), (PALE, 0.6), (ROSE, 0.45), (ROSE, 0.3)]
-    n = len(trail)
     for k, (colr, op) in reversed(list(enumerate(trail))):
         begin = -(n - k) * step      # all segments already running, tail lags behind head
         glow = (f'<rect width="{cell}" height="{cell}" rx="4" fill="{IVORY}" opacity="0.9" filter="url(#{p}-sg)"/>'
                 if k <= 2 else "")
         out.append(f'<g>{glow}<rect width="{cell}" height="{cell}" rx="3.5" fill="{colr}" opacity="{op}"/>'
-                   f'<animateMotion path="{path}" dur="{dur}s" begin="{begin:.2f}s" calcMode="linear" repeatCount="indefinite"/></g>')
+                   f'<animateMotion path="{path}" dur="{dur}s" begin="{begin:.3f}s" calcMode="paced" repeatCount="indefinite"/></g>')
 
     ly = gy + 7 * (cell + gap) + 26
     out.append(f'<text x="{gx}" y="{ly}" font-family="{MONO}" font-size="11" fill="{PALE}" fill-opacity="0.6">'
@@ -155,7 +170,7 @@ def render(weeks, total, demo_mode=False):
     rr, x0, y0, w0, h0 = 15, 1, 1, W - 2, H - 2
     d = (f"M{x0+rr},{y0} H{x0+w0-rr} A{rr},{rr} 0 0 1 {x0+w0},{y0+rr} V{y0+h0-rr} A{rr},{rr} 0 0 1 {x0+w0-rr},{y0+h0} "
          f"H{x0+rr} A{rr},{rr} 0 0 1 {x0},{y0+h0-rr} V{y0+rr} A{rr},{rr} 0 0 1 {x0+rr},{y0} Z")
-    anim = '<animate attributeName="stroke-dashoffset" values="1000;0" dur="3.6s" repeatCount="indefinite"/>'
+    anim = '<animate attributeName="stroke-dashoffset" values="1000;0" dur="2.4s" repeatCount="indefinite"/>'
     out.append(f'<path d="{d}" fill="none" stroke="{IVORY}" stroke-width="12" stroke-opacity="0.9" filter="url(#{p}-cg)" '
                f'pathLength="1000" stroke-dasharray="110 890" stroke-linecap="round">{anim}</path>')
     out.append(f'<path d="{d}" fill="none" stroke="{IVORY}" stroke-width="3.5" '

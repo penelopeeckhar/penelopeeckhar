@@ -30,17 +30,17 @@
 </div>
 
 <details>
-<summary><b>More projects</b></summary>
+<summary><img src="assets/more-projects.svg" width="96%" alt="More projects — click to expand"></summary>
 <br>
+<div align="center">
 
-| Project | What it is | Stack |
-| --- | --- | --- |
-| [Misconfig Mayhem](https://github.com/penelopeeckhar/projet-misconfig-mayhem) | Red/Blue cycle on a vulnerable FastAPI app: exploit 3 misconfigurations, fix them, verify. ~85 % overall risk reduction | FastAPI · Nginx · PostgreSQL · MinIO · Nmap · Nikto |
-| [SSH Honeypot](https://github.com/penelopeeckhar/projet-honeypot-ssh) | Paramiko honeypot with brute-force alerts shipped to ELK; container confined with AppArmor and seccomp | Python · Docker · ELK |
-| [Private Cloud Platform](https://github.com/penelopeeckhar/private-cloud-autoscaling-platform) | Proxmox cluster over ZeroTier, HAProxy load balancing, Prometheus-driven autoscaling | Proxmox · ZeroTier · HAProxy · Prometheus |
-| [Mini-TLS](https://github.com/penelopeeckhar/projet-crypto-tls) | TLS-style handshake: DH-2048, HKDF-SHA256, AES-256-GCM | Python · cryptography |
-| [Kaggriculture Agent](https://github.com/penelopeeckhar/kaggriculture-agent) | Beam-search agent for a Kaggle competition; ladder score 292.6 → 342.8 over 6 versions | Python · Docker |
+<a href="https://github.com/penelopeeckhar/projet-misconfig-mayhem"><img src="assets/more-misconfig.svg" width="100%" alt="Misconfig Mayhem"></a>
+<a href="https://github.com/penelopeeckhar/projet-honeypot-ssh"><img src="assets/more-honeypot.svg" width="100%" alt="SSH Honeypot"></a>
+<a href="https://github.com/penelopeeckhar/private-cloud-autoscaling-platform"><img src="assets/more-privatecloud.svg" width="100%" alt="Private Cloud Platform"></a>
+<a href="https://github.com/penelopeeckhar/projet-crypto-tls"><img src="assets/more-minitls.svg" width="100%" alt="Mini-TLS"></a>
+<a href="https://github.com/penelopeeckhar/kaggriculture-agent"><img src="assets/more-kaggle.svg" width="100%" alt="Kaggriculture Agent"></a>
 
+</div>
 </details>
 
 <div align="center">
@@ -58,7 +58,11 @@
 
 <img src="assets/connect.svg" width="100%" alt="Contact">
 
-[Email](mailto:abir.majdi@usmba.ac.ma) · [LinkedIn](https://www.linkedin.com/in/abir-majdi-a221bb296/) · [Portfolio](https://penelopeeckhar.github.io/portfolio/) · [TryHackMe](https://tryhackme.com/p/penny1598) · [HackerDNA](https://hackerdna.com/users/arael)
+<a href="mailto:abir.majdi@usmba.ac.ma"><img src="assets/link-email.svg" height="44" alt="Email"></a>
+<a href="https://www.linkedin.com/in/abir-majdi-a221bb296/"><img src="assets/link-linkedin.svg" height="44" alt="LinkedIn"></a>
+<a href="https://penelopeeckhar.github.io/portfolio/"><img src="assets/link-portfolio.svg" height="44" alt="Portfolio"></a>
+<a href="https://tryhackme.com/p/penny1598"><img src="assets/link-tryhackme.svg" height="44" alt="TryHackMe"></a>
+<a href="https://hackerdna.com/users/arael"><img src="assets/link-hackerdna.svg" height="44" alt="HackerDNA"></a>
 
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/footer-static.svg">
